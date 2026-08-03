@@ -1,0 +1,157 @@
+/* ===========================
+   MAJID LIVE - V1
+   Sprint 1
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Segoe UI,Arial,sans-serif;
+    background:#0f1117;
+    color:#ffffff;
+    overflow:hidden;
+}
+
+#app{
+    display:flex;
+    width:100vw;
+    height:100vh;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+    width:270px;
+    background:#171b24;
+    border-right:1px solid #2d3443;
+    padding:25px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:40px;
+    color:#4ea1ff;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:15px;
+    margin-bottom:10px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.25s;
+    font-size:18px;
+}
+
+.sidebar li:hover{
+    background:#2a3142;
+}
+
+.sidebar li.active{
+    background:#2f80ed;
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+header{
+    padding:25px;
+}
+
+header input{
+    width:100%;
+    max-width:500px;
+    padding:14px 18px;
+    border:none;
+    border-radius:12px;
+    background:#222838;
+    color:white;
+    font-size:16px;
+}
+
+header input:focus{
+    outline:none;
+    background:#2b3347;
+}
+
+/* ===========================
+   CHAÎNES
+=========================== */
+
+#channels{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+    gap:25px;
+    padding:25px;
+    overflow-y:auto;
+}
+
+.channel-card{
+    background:#1d2330;
+    border-radius:18px;
+    padding:20px;
+    transition:.25s;
+    cursor:pointer;
+}
+
+.channel-card:hover{
+    transform:scale(1.04);
+    background:#2b3347;
+}
+
+.channel-logo{
+    width:70px;
+    height:70px;
+    border-radius:12px;
+    background:#ffffff;
+    margin-bottom:20px;
+}
+
+.channel-name{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.channel-country{
+    margin-top:8px;
+    color:#8aa3d0;
+}
+
+.live{
+    display:inline-block;
+    margin-top:18px;
+    background:#e53935;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+/* ===========================
+   Scroll
+=========================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#39465d;
+    border-radius:20px;
+}
